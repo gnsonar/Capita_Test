@@ -18,9 +18,9 @@ public class StringCalculatorTest
 	
 	
 	@Test
-    public void shouldAnswerWithTrue()
+    public void firstTest()
     {
-		StringBuffer input = new StringBuffer().append("4").
+		StringBuffer input = new StringBuffer().append("5").
 				append("\n").
 				append("7+(6*5^2+3-4/2)").
 				append("\n").
@@ -28,9 +28,11 @@ public class StringCalculatorTest
 				append("\n").
 				append("8*+7").
 				append("\n").
-				append("(8*5/8)-(3/1)-5");
+				append("(8*5/8)-(3/1)-5").
+				append("\n").
+				append("(8*5/8)/(6+(4*7))-(3/1)-5");
         try {
-			stringCalculator.solveMathematicalExpression(input.toString());
+			System.out.println(stringCalculator.solveMathematicalExpression(input.toString()));
 		} catch (Exception e) {
 			
 		}
