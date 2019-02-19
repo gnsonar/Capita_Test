@@ -35,7 +35,7 @@ public class StringCalculatorImpl implements StringCalculator{
 			});
 			return output.toString();
 			
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();;
 			return "ERROR IN CALCULATION";
 		}
